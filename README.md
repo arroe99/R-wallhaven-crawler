@@ -2,7 +2,7 @@
 
 **Instructions:**
 
-1.Download the file "240502wallhaven_crawler_new.R".  
+1.Download the script "240502wallhaven_crawler_new.R".  
 2.Download the relevant packages used.  
 3.Change the parameter "page = 10" to the desired number of pages to download.  
 4.Run all to start the process.  
@@ -24,8 +24,8 @@ R语言爬虫从[壁纸网站](https://wallhaven.cc/)获取壁纸，初始网页
 ----
 
 2024.5.2 update  
-最近很空，像换换壁纸，就研究了一下。  
-原来根本没有变成动态，滚动条往下拉的话网址中的page参数还是会增加的，这样其实原本的脚本根本不需要修改。  
+最近很空，想换换壁纸，就研究了一下。  
+原来网站没有变成动态，滚动条往下拉的话page参数还是会增加的，这样其实原本的脚本不需要修改。  
 但是运行了一下，解析网址的时候报错timeout了，解决方法是在脚本中设置代理即可（首先要开着梯子） 
 ```r
 # Set up proxy
